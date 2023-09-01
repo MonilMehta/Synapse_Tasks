@@ -24,7 +24,7 @@ class ChessPlayer():
         elif EloDiff>100:
             a.TourneyScore+=1
         elif EloDiff>50 and EloDiff<100:
-            winning_factor = b.tenacity*random.randint(0,10)
+            winning_factor = b.tenacity*random.randint(1,10)
             if a.Elo>winning_factor:
                 a.TourneyScore+=1
             else:
